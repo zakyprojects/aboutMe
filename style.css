@@ -1,0 +1,120 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(to bottom right, #0d1117, #161b22);
+    color: #e6edf3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 40px;
+    text-shadow: 0 0 12px rgba(88, 166, 255, 0.4);
+    animation: fadeInDown 0.6s ease-out;
+    text-align: center;
+}
+.container {
+    background-color: #1c2128;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 850px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+h2 {
+    color: #58a6ff;
+    margin-top: 30px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 5px;
+}
+ul { padding-left: 20px; }
+li { margin-bottom: 10px; }
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+.certificate {
+    margin-top: 40px;
+    text-align: center;
+}
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.certificate p {
+    margin-top: 10px;
+    color: #8b949e;
+}
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #8b949e;
+    text-align: center;
+    /* animation: fadeInUp 0.6s ease-out; */
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+    .container {
+        padding: 20px;
+    }
+    header {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 15px;
+    }
+    header {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Fade-in on load */
+.fade-in-on-load {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.fade-in-on-load.fade-in-active {
+  opacity: 1;
+  transform: none;
+}
+
+/* Optional: Smoother AOS transitions */
+[data-aos] {
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1) !important;
+}

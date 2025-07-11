@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description"
+        content="Zakria Khan – BSCS student at Agricultural University Peshawar. Explore his learning journey, projects, and personal website zakyprojects.site">
+    <meta name="keywords"
+        content="Zakria Khan, zakyprojects.site, CS50x, Harvard, web development, Python, Flask, React, HTML, CSS, JavaScript, Pashtun coder">
+    <meta name="author" content="Zakria Khan">
+    <meta property="og:title" content="Zakria Khan – Computer Science Student & Web Learner">
+    <meta property="og:description"
+        content="Explore Zakria Khan's personal portfolio and projects on zakyprojects.site">
+    <meta property="og:url" content="https://zakyprojects.site">
+    <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Zakria Khan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header data-aos="fade-down">About Me</header>
+    <section class="about fade-in-on-load" id="main-content">
+        <div class="container">
+            <p data-aos="fade-up">Hello! I'm <strong>Zakria Khan</strong>, a passionate Computer Science student from <strong>Risalpur
+                    Cantt, Khyber Pakhtunkhwa</strong>. I'm currently pursuing my <strong>Bachelor of Science in
+                    Computer Science (BSCS)</strong> at the <strong>Agricultural University of Peshawar</strong>.</p>
+
+            <p data-aos="fade-up" data-aos-delay="100">I enjoy learning through real-world projects and online platforms that challenge my thinking and sharpen
+                my skills. My approach is practical — I believe in learning by doing.</p>
+
+            <h2 data-aos="fade-right">Academic Background</h2>
+            <ul data-aos="fade-left">
+                <li>BS Computer Science — Agricultural University of Peshawar (In Progress)</li>
+                <li>Completed <strong>CS50x</strong> — Harvard's Introduction to Computer Science</li>
+                <li>Completed <strong>CS50P</strong> — Harvard's Introduction to Programming with Python</li>
+                <li>Currently learning <strong>CS50W</strong> — Harvard's Web Programming with Python & JavaScript</li>
+            </ul>
+
+            <h2 data-aos="fade-right">Programming Languages & Tools</h2>
+            <ul data-aos="fade-left">
+                <li><strong>Languages:</strong> C, C++, Python, HTML, CSS, JavaScript</li>
+                <li><strong>Databases:</strong> SQLite3</li>
+                <li><strong>Frameworks:</strong> Flask (basic)</li>
+                <li><strong>Currently Learning:</strong> React.js</li>
+                <li><strong>Tools:</strong> GitHub, VS Code, Git, Command Line</li>
+            </ul>
+
+            <h2 data-aos="fade-right">Skill Focus</h2>
+            <h3 style="color: #58a6ff; margin-top: 10px;" data-aos="zoom-in">Web Development</h3>
+            <p data-aos="fade-up">I’m learning web development and currently working with the following technologies:</p>
+            <ul data-aos="fade-left">
+                <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React (currently exploring react)</li>
+                <li><strong>Backend Development:</strong> Python with Flask (currently practicing on flask)</li>
+            </ul>
+
+            <h2 data-aos="fade-right">Languages I Speak</h2>
+            <ul data-aos="fade-left">
+                <li>Pashto (Native)</li>
+                <li>Urdu (Fluent)</li>
+                <li>English (Intermediate to Fluent)</li>
+            </ul>
+
+            <h2 data-aos="fade-right">Harvard CS50x Certification</h2>
+            <p style="color: #8b949e; margin-top: -15px; font-size: 1rem;" data-aos="fade-up">Certified by Harvard University –
+                acknowledged for completing the prestigious CS50x course</p>
+            <div class="certificate" data-aos="zoom-in-up">
+                <img src="CS50x.png" alt="CS50x Certificate">
+                <p>Certified by Harvard University (David J. Malan) in 2025</p>
+            </div>
+
+            <h2 data-aos="fade-right">My Website: zakyprojects.site</h2>
+            <p data-aos="fade-up"><strong>zakyprojects.site</strong> is my personal website where I share simple frontend pages, small
+                projects, and experiments from my learning journey.</p>
+            <p data-aos="fade-up"><a href="https://zakyprojects.site" target="_blank">Visit zakyprojects.site</a></p>
+            <p data-aos="fade-up">Email: <a href="mailto:mzakriakhan55@gmail.com">mzakriakhan55@gmail.com</a></p>
+            <p data-aos="fade-up">GitHub, and LinkedIn links can be added here when ready.</p>
+        </div>
+    </section>
+    <footer data-aos="fade-up" id="footer">Made with ❤️ by Zakria Khan</footer>
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: false
+      });
+      // Fade-in on load
+      window.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('main-content').classList.add('fade-in-active');
+        // Set AOS once:true for footer only
+        var footer = document.getElementById('footer');
+        if (footer) {
+          footer.setAttribute('data-aos-once', 'true');
+          AOS.refreshHard();
+        }
+      });
+    </script>
+</body>
+
+</html>
