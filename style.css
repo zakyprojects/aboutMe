@@ -1,3 +1,4 @@
+/* style.css */
 * { box-sizing: border-box; }
 body {
     margin: 0;
@@ -54,12 +55,31 @@ a:hover { text-decoration: underline; }
     margin-top: 10px;
     color: #8b949e;
 }
+
+/* New Course Difficulty Styles */
+.course-difficulty {
+    margin-top: 20px;
+    background: #0f141a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    animation: fadeInUp 0.6s ease-out;
+}
+.course-difficulty h3 {
+    color: #58a6ff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.course-difficulty p {
+    color: #8b949e;
+    margin: 0;
+}
+
 footer {
     margin-top: 50px;
     font-size: 0.9rem;
     color: #8b949e;
     text-align: center;
-    /* animation: fadeInUp 0.6s ease-out; */
 }
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-30px); }
@@ -84,6 +104,9 @@ footer {
     h2 {
         font-size: 1.3rem;
     }
+    .course-difficulty {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -99,6 +122,9 @@ footer {
     }
     h2 {
         font-size: 1.2rem;
+    }
+    .course-difficulty {
+        padding: 15px;
     }
 }
 
